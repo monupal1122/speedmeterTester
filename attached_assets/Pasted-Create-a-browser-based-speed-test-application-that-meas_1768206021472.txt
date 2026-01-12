@@ -1,0 +1,141 @@
+Create a browser-based speed test application that measures:
+
+Ping (Latency in ms)
+
+Download Speed (Mbps)
+
+Upload Speed (Mbps)
+
+The speed calculation must be realistic, based on bytes transferred and time taken, considering browser limitations.
+
+🛠️ Tech Stack
+
+Backend
+
+Node.js
+
+Express.js
+
+REST APIs
+
+Frontend
+
+React.js
+
+Modern UI with animations
+
+Optional / Bonus
+
+Charts (Chart.js or similar)
+
+WebSockets for live speed updates
+
+🧱 Backend Requirements
+
+Use a clean, readable structure with:
+
+routes
+
+controllers
+
+services
+
+utils
+
+Do NOT use a database unless required (MongoDB optional).
+
+Do NOT over-engineer with microservices.
+
+Backend APIs:
+
+GET /api/ping → returns latency in milliseconds
+
+GET /api/download-test → calculates download speed in Mbps
+
+POST /api/upload-test → calculates upload speed in Mbps
+
+Speed Calculation Rule:
+Speed (Mbps) = (Bytes × 8) / Time(seconds) / 1024 / 1024
+
+🎨 Frontend Requirements
+
+Speedtest.net inspired circular speed meter
+
+Smooth number animation during speed test
+
+Clean, professional UI
+
+Responsive design
+
+Speed Test Flow (Must be Sequential):
+
+User clicks Start Test
+
+Ping test runs
+
+Download speed test runs
+
+Upload speed test runs
+
+Final summary screen is displayed
+
+📁 Expected Folder Structure
+
+Backend
+
+backend/
+├── src/
+│   ├── routes/
+│   ├── controllers/
+│   ├── services/
+│   ├── utils/
+│   ├── app.js
+│   └── server.js
+
+
+Frontend
+
+frontend/
+├── src/
+│   ├── pages/
+│   ├── components/
+│   ├── services/
+│   ├── utils/
+│   └── App.jsx
+
+📄 Deliverables
+
+Clean, well-commented source code
+
+Working web application
+
+README.md explaining:
+
+Speed calculation logic
+
+API flow
+
+Project structure
+
+Browser limitations
+
+🎯 Evaluation Focus
+
+Correct speed calculation logic
+
+Code quality and structure
+
+UI similarity to Speedtest.net
+
+Clear explanation of logic
+
+Important Notes
+
+Do not add authentication, admin panels, or unrelated features.
+
+Keep the implementation simple, realistic, and professional.
+
+Prioritize clarity over complexity.
+
+Output:
+Provide complete backend and frontend code with explanations.
