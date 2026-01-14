@@ -51,7 +51,7 @@ app.use((req, res, next) => {
 
 (async () => {
   // Database Connection
-  const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://Monu:Monu123@cluster0.kp6ma.mongodb.net/Internet";
+  const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/speedtest";
   try {
     await mongoose.connect(MONGODB_URI);
     log("Connected to MongoDB");
